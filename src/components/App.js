@@ -4,7 +4,7 @@ import youtube from '../apis/youtube';
 
 class App extends React.Component{
     onTermSubmit = (term)=>{
-    youtube.get('https://www.googleapis.com/youtube/v3/search',{
+    youtube.get('/search', {
            params:{
                q: term
            }
